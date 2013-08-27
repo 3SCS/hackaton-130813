@@ -1,0 +1,13 @@
+from utilisateur.models import *
+
+	for i in utilisateurtable.objects.all() : 
+		print i.id_last_item
+		print i.id_penultimate_item
+		print i.id_ante_penultimate_item
+		print i.id_ante_ante_penultimate_item
+
+for i in link_to_next_possible_pi.objects.all() : 
+	print i.iditemfk
+	print i.iditemnextfk
+	print i.d_a_pos_ph
+	print i.d_a_neg_ph

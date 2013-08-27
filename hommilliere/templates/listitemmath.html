@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+
+{% load static %}
+
+
+{% block middle %}
+<div style = "	position : relative;
+		left:260px;
+		">
+
+<ul style = " list-style-image : url('{% static 'images/dialog-ok.png'%}');
+font-size : 3em;
+margin-bottom : 22px;">
+<li><a href = "{% url 'viewitem' 1 %}">equation du premier degres</a></li>
+<li><a href = "{% url 'viewitem' 2 %}">equation du second degres</a></li>
+<li><a href = "{% url 'viewitem' 3 %}">derivee</a></li>
+<li><a href = "{% url 'viewitem' 4 %}">primitive</a></li>
+<li><a href = "{% url 'viewitem' 5 %}">equation différencielle</a></li>
+
+
+</ul>
+
+
+
+</div>
+
+{% endblock %}
+

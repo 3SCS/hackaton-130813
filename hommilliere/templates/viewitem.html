@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+
+{% load static %}
+
+
+{% block middle %}
+<div style = "	position : relative;
+		left:260px;
+		">
+
+<ul style = " list-style-image : url('{% static 'images/dialog-ok.png'%}');
+font-size : 3em;
+margin-bottom : 22px;">
+<li><a href = "{{lien}}">cours </a></li>
+
+</ul>
+
+
+
+</div>
+
+{% endblock %}

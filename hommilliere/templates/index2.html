@@ -1,0 +1,14 @@
+{%load static%}
+<div><form action="{% url "utilisateur.views.utilisateur" %}" method="post">
+{%csrf_token %}
+{{ form.as_p }}
+{{idUtilisateur}}
+<input type="submit" value="Submit" />
+</form>
+</div>
+
+
+<div>
+<a href = "{%url 'utilisateur.views.genereid'%}"> je n'ai pas encore d'id</a>
+</div>
+

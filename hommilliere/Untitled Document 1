@@ -1,0 +1,53 @@
+from utilisateur.models import *
+a = pedagogic_item.objects.create()
+a.link_to_courses = 'equation_du_premier_degre'
+a.link_to_exo = 'equation_du_premier_degreexo'
+a.save()
+
+pedagogic_item_tablefictif.objects.create()
+
+
+
+from utilisateur.models import *
+a = pedagogic_item.objects.create()
+a.link_to_courses = 'equation_du_second'
+a.link_to_exo = 'equation_du_premier_degreexo'
+a.save()
+
+
+pedagogic_item_tablefictif.objects.create()
+
+
+
+
+from utilisateur.models import *
+a = pedagogic_item.objects.create()
+a.link_to_courses = 'derivee'
+a.link_to_exo = 'equation_du_premier_degreexo'
+a.save()
+
+pedagogic_item_tablefictif.objects.create()
+
+
+
+from utilisateur.models import *
+a = pedagogic_item.objects.create()
+a.link_to_courses = 'primitive'
+a.link_to_exo = 'equation_du_premier_degreexo'
+a.save()
+
+pedagogic_item_tablefictif.objects.create()
+
+
+
+from utilisateur.models import *
+a = pedagogic_item.objects.create()
+a.link_to_courses = 'equation_differentiel'
+a.link_to_exo = 'equation_du_premier_degreexo'
+a.save()
+
+
+pedagogic_item_tablefictif.objects.create()
+
+
+

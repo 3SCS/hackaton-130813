@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+
+{% load static %}
+
+
+{% block middle %}
+<div style = "	position : relative;
+		left:260px;
+		">
+
+<ul style = " list-style-image : url('{% static 'images/dialog-ok.png'%}');
+font-size : 3em;
+margin-bottom : 22px;">
+
+
+<li><a href = "{{lien}}">{% if lien %}{{nom_cour}}{%endif%}</a></li>
+<span>{% if not lien %}Desole il n'y a pas de lien ici{%endif%}</span>
+
+</ul>
+
+
+
+</div>
+
+{% endblock %}
+

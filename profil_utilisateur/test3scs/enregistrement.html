@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <title>Inscription</title>
+    </head>
+    
+    <!--[if IE 6 ]><body class="ie6 old_ie"><![endif]-->
+    <!--[if IE 7 ]><body class="ie7 old_ie"><![endif]-->
+    <!--[if IE 8 ]><body class="ie8"><![endif]-->
+    <!--[if IE 9 ]><body class="ie9"><![endif]-->
+    <!--[if !IE]><!--><body><!--<![endif]-->
+        <div id="bloc_page">
+            <header>
+                <div id="titre_principal">
+                   
+                    <h1>TEST</h1>
+                    <h2>Profil utilisateur</h2>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="authentifier.html">Connexion</a></li>
+                        <li><a href="enregistrement.html">Inscription</a></li>
+                       
+                    </ul>
+                </nav>
+            </header>
+            
+            <div id="banniere_image">
+                <div id="banniere_description">
+                  
+                    <a href="#" class="bouton_rouge"> <img src="images/flecheblanchedroite.png" alt="" /></a>
+                </div>
+            </div>
+            
+            <section>
+                
+
+<center><h1 class="Style1"><u>Inscription</u></h1>
+</center>
+
+<form method="post" name="insert" action="enregistrement.php">
+	<div align="center">
+	  <table width="442">
+	   
+	   <tr>
+	      <td height="81"><span class="Style1"> Type (etudiant/enseignant)</span></td>
+		  <td><input type="text" name="type" /></td>
+	  </tr>
+
+		<tr>
+	      <td height="87"><span class="Style1"> Nom</span></td>
+		  <td><input type="text" name="nom" /></td>
+	  </tr>
+	    <tr>
+	      <td height="97"><span class="Style1"> Prenom</span></td>
+		  <td><input type="text" name="prenom" /></td>
+	  </tr>
+	  <tr>
+	      <td height="97"><span class="Style1">Date de naissance</span></td>
+		  <td><input type="text" name="date_naiss" /></td>
+	  </tr>
+	  	  <tr>
+	      <td height="97"><span class="Style1">Badge</span></td>
+		  <td><input type="text" name="id_badge" /></td>
+	  </tr>
+	  
+
+	  	    <tr>
+	      <td height="81"><span class="Style1"> Nom d'utilisateur</span></td>
+		  <td><input type="text" name="login" /></td>
+	  </tr>
+	    <tr>
+	      <td height="97"><span class="Style1"> Mot de passe</span></td>
+		  <td><input type="text" name="password" /></td>
+	  </tr>
+
+	  <tr>
+	      <td height="97"><span class="Style1">Sexe</span></td>
+		  <td><input type="text" name="sexe" /></td>
+	  </tr>
+	    <tr>
+	      <td><input type="submit" name="sub" value="Envoyer"/></td>
+		  <td><input type="reset" name="rt" value="Effacer" /></td>
+	  </tr>
+      </table>
+  </div>
+</form>
+
+  </section>
+            
+            <footer>
+              
+            </footer>
+        </div>
+    </body>
+</html>

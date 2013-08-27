@@ -1,0 +1,177 @@
+{% load static %}
+<!DOCTYPE html>
+  <head>
+
+	<meta charset="utf-8" />
+
+    	<title>Hackathon</title>
+ <link href="{% static 'css/css.css' %}" rel="stylesheet" type="text/css" />
+ <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+ <link rel="stylesheet" type="text/css" href="{% static 'css/style9.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/demo.css' %}" />    
+        <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
+ 
+ </head>
+  
+<body>
+
+<!--start container -->
+<div id="container">
+<header>
+    <nav>   
+      <div id="logo"><a href=""><img src="{% static 'images/Logo.jpeg' %}" alt="Logo here" /></a></div>
+      
+      <div id="search-top">
+   <form method="post" action="#">
+  <input type="text" onFocus="if(this.value=='Search')this.value='';" onBlur="if(this.value=='')this.value='Search';" value="Search"  id="search-field"/>
+  <input type="submit" value="" id="search-btn"/>
+  </form> 
+      </div>  
+      <div id="nav_social"><a href="http://www.facebook.com"><img src="{% static 'images/facebook_32.png' %}" alt="Become a fan" width="32" height="32" /></a><a href="www.twitter.com"><img src="{% static 'images/twitter_32.png' %}" alt="Follows on Twitter" /></a><a href="#"><img src="{% static 'images/linkedin_32.png' %}" alt="Linked in" /></a><a href="#"><img src="{% static 'images/email_32.png' %}" alt="Contact" width="32" height="32" /></a> </div>
+  </nav>
+  
+    </header>
+
+<div class="content">
+
+          <ul class="ca-menu">
+                    <li>
+                        <a href="cours.html">
+                            <span class="ca-icon">A</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Cours</h2>
+                                <h3 class="ca-sub">Des vidéos et des documents</h3>
+                            </div>
+                        </a>                    </li>
+                    <li>
+                        <a href="universites.html">
+                            <span class="ca-icon">I</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Universités</h2>
+                                <h3 class="ca-sub">Les meilleurs universités du monde</h3>
+                            </div>
+                        </a>                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="ca-icon">C</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Comment cela fonctionne</h2>
+                                <h3 class="ca-sub">Comment cela fonctionne</h3>
+                            </div>
+                        </a>                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="ca-icon">S</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Participants</h2>
+                                <h3 class="ca-sub">Inscrivez vous maintenant</h3>
+                            </div>
+                        </a>                    </li>
+                </ul>
+  <!--star main --> 
+    
+    <main>    
+      <div class="abox">
+      <figure>
+      <fcapion>
+     <h1>Mathématiques </h1>
+      </fcaption><a href=" {%url 'listeitemmath'%}"></a><a href=" {%url 'listeitemmath'%}"><img src="{% static 'images/math.jpg' %}" alt="I love graphic" width="289" height="175" /></a></figure>
+      </div>
+    <div class="abox">
+      <figure>
+      <fcapion>
+      <h1>Informatiques </h1>
+      </fcaption>
+      <a href="#"><img src="{% static 'images/info.jpg' %}" alt="I love graphic" width="287" height="176" /></a>      </figure>
+    </div>
+    <div class="abox">
+      <figure>
+      <fcapion>
+     <h1>Physique</h1>
+      </fcaption><a href="#"></a><a href="#"><img src="{% static 'images/physique.jpg' %}" alt="I love graphic" width="289" height="178" /></a></figure>
+      </div>   
+    </main>
+    <!--end main -->
+    <!--start middle -->
+    <middle>
+	{% block middle %}    
+      <div class="enter"><P ><br></P>
+        <div class="imgteaser">
+<a href="#"><img src="{% static 'images/p1.png' %}" alt="Todo el Todo" width="413" height="220" /><span class="desc">
+	<strong>Hackathon</strong>
+		 L'inspiration est le désir, par extension, pensez-vous que c'est vrai?</span></a></div><div class="btn"> <a href="#">Read More...</a></div>
+      </div>	
+      <div class="section_slogan"><img src="{% static 'images/quote-right.png' %}" alt="images" /><span class="cursive">Nous allons ouvrir le monde de la connaissance pour vous! </span><img src="images/quote-left.png" alt="images" /></div>
+      <div class="middle_box"><h1><img src="{% static 'images/fav.png' %}" width="16" height="16" /> <a href="#">Resources</a></h1>
+      <ol>
+        <img src="{% static 'images/dialog-ok.png' %}" width="16" height="16" /> Lorem Ipsum quntum</ol>
+      <ol>
+        <img src="{% static 'images/dialog-ok.png' %}" width="16" height="16" /> Lorem ipsum dolor sit amet</ol>
+      <ol>
+        <img src="{% static 'images/dialog-ok.png' %}" width="16" height="16" /> Integer vehicula laoreet purus ac tincidunt</ol>
+     <ol> <img src="{% static 'images/dialog-ok.png' %}" width="16" height="16" /> distinctly portfolio suite grande architectural five-star.</ol>
+      </div>
+      <div class="middle_box"><h1><img src="{% static 'images/fav.png' %}" width="16" height="16" /> <a href="#">Blogs</a></h1>
+        <p><img src="{% static 'images/dialog-ok.png' %}" width="16" height="16" /> Recent Post</p>
+        <ol>
+        <img src="{% static 'images/dialog-ok.png' %}" width="16" height="16" /> Lorem Ipsum quntum
+        </ol>
+      <ol>
+        <img src="{% static 'images/dialog-ok.png' %}" width="16" height="16" /> Lorem ipsum dolor sit amet
+      </ol>
+      <ol> <img src="{% static 'images/dialog-ok.png' %}" width="16" height="16" /> distinctly portfolio suite grande architectural five-star.</ol>
+      </div>
+      <div class="middle_box">
+        <h1><img src="images/fav.png" width="16" height="16" /> <a href="#">Design </a></h1>
+        <img src="{% static 'images/dialog-ok.png' %}" width="16" height="16" /> Lorem Ipsum quntum</ol>
+      <ol>
+        <img src="{% static 'images/dialog-ok.png' %}" width="16" height="16" /> Lorem ipsum dolor sit amet</ol>
+      <ol>
+        <img src="{% static 'images/dialog-ok.png' %}" width="16" height="16" /> Integer vehicula laoreet purus ac tincidunt</ol>
+     <ol> <img src="{% static 'images/dialog-ok.png' %}" width="16" height="16" /> distinctly portfolio suite grande architectural</ol>
+      </div>
+{% endblock %}
+    </middle>
+</div>
+<!--end middle -->
+<!--start footer -->
+<footer>  
+  <div id="footer">
+  <div id="footerleft">
+      <h2>Imediacreatives</h2>
+      <ul>
+        <li><a href="..."></a></li>
+        <li><a href="..."></a></li>
+        <li><a href="..."></a></li>
+      </ul>
+    </div>
+    <div id="footermiddle">
+      <h2>User Comments</h2>
+      <ul>
+        <li><a href="..."></a></li>
+        <li><a href="..."></a></li>
+        <li><a href="..."></a></li>
+      </ul>
+    </div>
+    <div id="footerright">
+      <h2>Design & Project</h2>
+      <ul>
+        <li><a href="..."></a></li>
+        <li><a href="..."></a></li>
+        <li><a href="..."></a></li>
+      </ul>
+    </div>
+    <details>
+<summary>
+<DIV lang="en" _mstHash="826319">Toutes les activités de développement ont été fournies par Mounadjat soft en html python et django </DIV>
+<p><a href="http://www.imediacreatives.it" target="_blank"></a>
+  Copyright &copy; Mounadjat Soft-2013.</p></summary><p></p>
+</details>
+    </div>
+</footer>
+<!--end footer -->
+</div>
+<!--end container -->
+  </body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+</html>

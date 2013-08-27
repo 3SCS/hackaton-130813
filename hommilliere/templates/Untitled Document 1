@@ -1,0 +1,12 @@
+sil ya 3 liens sortits de l'item 
+
+
+-----un seul lien on le presente directement 
+-----sil yen a 2 on presente le plus attractif avec une probabiliré de 80%
+si 3 
+on selectionne 2 aux hasard 
+ensuite on presente le meielleur et pour le reste on fait 1
+
+
+si plus de 4 tournoi binaire pour le deuxieme on ecarte celui selectionner et on fait tournoi binaire
+

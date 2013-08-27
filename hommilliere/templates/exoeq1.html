@@ -1,0 +1,12 @@
+{%load static%}
+<div><form action="{% url "utilisateur.views.equation_du_premier_degreexo" %}" method="post">
+{%csrf_token %}
+<h3>Avez vous compris ce cours???</h3>
+<!--affichage du formulaire-->
+{{ form.as_p }}
+
+<input type="submit" value="Submit" />
+</form>
+</div>
+
+
